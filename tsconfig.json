@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "ESNext", // "target": Especifica para qual versão do ECMAScript (ES) o código TypeScript será compilado. Neste caso, está definido como "es6", indicando que o código será compilado para ES6 (também conhecido como ES2015), que é uma versão mais moderna do JavaScript.
+        "module": "CommonJS", // "module": Define o formato do módulo a ser gerado pelo compilador. "commonjs" é escolhido aqui, indicando que o código será compilado para CommonJS, que é o formato de módulo comumente usado no Node.js.
+        "outDir": "./dist", // "outDir": Especifica o diretório de saída onde os arquivos JavaScript serão gerados após a compilação. Aqui, está definido como ./dist, indicando que os arquivos serão colocados dentro da pasta dist no diretório raiz do projeto.
+        "strict": true, // "strict": Habilita todas as verificações rigorosas do TypeScript para ajudar a capturar erros comuns no código. Quando definido como true, o TypeScript aplica configurações rigorosas, como checagem de tipos mais rígida, para garantir um código mais seguro e robusto.
+        "esModuleInterop": true, // "esModuleInterop": Essa opção habilita a interoperabilidade de módulos ES (ECMAScript) e CommonJS. Isso é útil quando você está trabalhando com bibliotecas que exportam módulos ES, enquanto o seu projeto usa o formato CommonJS. Configurando isso como true, o TypeScript irá permitir que você importe módulos ES como se estivessem em formato CommonJS.
+    },
+
+    "include": ["src/**/*.ts"], // "include": Esta opção especifica quais arquivos TypeScript devem ser incluídos no processo de compilação. No exemplo dado, todos os arquivos .ts dentro da pasta src e suas subpastas serão incluídos.
+    "exclude": ["node_modules"], // "exclude": Esta opção especifica quais arquivos ou pastas devem ser excluídos do processo de compilação. Aqui, node_modules é excluído, o que é uma prática comum, já que você geralmente não precisa compilar os módulos instalados em node_modules.
+}
